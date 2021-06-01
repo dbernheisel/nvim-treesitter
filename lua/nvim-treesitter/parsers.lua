@@ -593,6 +593,26 @@ list.fortran = {
   },
 }
 
+list.embedded_template = {
+  install_info = {
+    url = 'https://github.com/tree-sitter/tree-sitter-embedded-template',
+    files =  { 'src/parser.c' },
+    requires_generate_from_grammar  = true,
+  },
+  used_by = {'eelixir', 'eex', 'leex', 'sface'}
+}
+
+-- this currently does not work   vvvv
+list.html_erb = {
+  install_info = {
+    url = 'https://github.com/tree-sitter/tree-sitter-embedded-template',
+    files =  { 'src/parser.c' },
+    requires_generate_from_grammar  = true,
+  },
+  used_by = {'eruby', 'erb'}
+}
+-- this currently does not work   ^^^^
+
 local M = {
   list = list
 }
